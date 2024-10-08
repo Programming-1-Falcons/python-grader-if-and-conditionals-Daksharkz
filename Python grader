@@ -1,0 +1,17 @@
+total_points= int(input("total points possible: "))
+achived = int(input("points achived: "))
+score = achived/total_points * 100
+score = round(score, 2)
+print("The student's score is:")
+print(f"{score}% ")
+print("They recived an:")
+if score <= 50:
+    print("F")
+elif score <= 60:
+    print("D")
+elif score <= 75:
+    print("C")
+elif score <= 88:
+    print("B")
+else:
+    print("A")
